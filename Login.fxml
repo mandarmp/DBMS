@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: 0,100,0;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PDBMS.LoginController">
+   <children>
+      <AnchorPane layoutX="316.0" layoutY="285.0" prefHeight="512.0" prefWidth="1289.0" style="-fx-background-color: #f3e5f5;">
+         <children>
+            <VBox layoutY="150.0" spacing="30.0">
+               <children>
+                  <JFXButton onAction="#loginview" prefHeight="44.0" prefWidth="186.0" ripplerFill="#6677e3" text="Sign In" textFill="#4a148c">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton onAction="#publicview" prefHeight="44.0" prefWidth="186.0" ripplerFill="#6677e3" text="Public View" textFill="#4a148c">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <AnchorPane layoutX="804.0" layoutY="39.0" prefHeight="435.0" prefWidth="471.0">
+               <children>
+                  <JFXTextField fx:id="txtUserName" layoutX="55.0" layoutY="123.0" prefHeight="50.0" prefWidth="324.0" promptText="Username" style="-fx-text-fill: #4a148c;">
+                     <font>
+                        <Font size="21.0" />
+                     </font></JFXTextField>
+                  <JFXPasswordField fx:id="txtPassword" layoutX="55.0" layoutY="213.0" prefHeight="50.0" prefWidth="324.0" promptText="Password" style="-fx-text-fill: #4a148c;">
+                     <font>
+                        <Font size="21.0" />
+                     </font></JFXPasswordField>
+                  <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" defaultButton="true" layoutX="186.0" layoutY="312.0" onAction="#loginclick" ripplerFill="#3625cd">
+                     <graphic>
+                        <FontAwesomeIconView fill="#4a148c" glyphName="CHEVRON_CIRCLE_RIGHT" size="50" />
+                     </graphic>
+                  </JFXButton>
+                  <Label layoutX="179.0" layoutY="43.0" text="Sign In" textFill="#4a148c">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="506.0" layoutY="186.0" prefHeight="709.0" prefWidth="617.0" style="-fx-background-color: #4a148c;">
+         <children>
+            <Label alignment="CENTER" layoutX="100.0" layoutY="186.0" prefHeight="144.0" prefWidth="417.0" text="Welcome to Police Department Database Management and Analysis System" textAlignment="CENTER" textFill="#f3e5f5" wrapText="true">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" cancelButton="true" contentDisplay="GRAPHIC_ONLY" layoutX="514.0" layoutY="28.0" onAction="#exitApp" ripplerFill="#3625cd">
+               <graphic>
+                  <FontAwesomeIconView fill="#f3e5f5" glyphName="CLOSE" size="50" />
+               </graphic>
+            </JFXButton>
+            <Label alignment="CENTER" layoutX="29.0" layoutY="431.0" prefHeight="44.0" prefWidth="166.0" text="Developed By :" textAlignment="CENTER" textFill="#f3e5f5" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="392.0" layoutY="529.0" prefHeight="44.0" prefWidth="166.0" text="Sanath P Holla" textAlignment="CENTER" textFill="#f3e5f5" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="60.0" layoutY="529.0" prefHeight="44.0" prefWidth="166.0" text="Mandar M Patil" textAlignment="CENTER" textFill="#f3e5f5" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="226.0" layoutY="475.0" prefHeight="44.0" prefWidth="166.0" text="Pavan Keshav L" textAlignment="CENTER" textFill="#f3e5f5" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

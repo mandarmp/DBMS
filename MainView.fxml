@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.chart.StackedBarChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: 0,100,0;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PDBMS.MainView">
+   <children>
+      <AnchorPane layoutX="227.0" layoutY="83.0" prefHeight="915.0" prefWidth="1466.0">
+         <children>
+            <AnchorPane fx:id="user" layoutX="318.0" layoutY="55.0" prefHeight="860.0" prefWidth="1148.0" style="-fx-background-color: #9c27b0;">
+               <children>
+                  <JFXTextField alignment="CENTER" editable="false" focusTraversable="false" labelFloat="true" layoutX="233.0" layoutY="49.0" prefHeight="128.0" prefWidth="683.0" style="-fx-text-fill: white;" text="Users Management" unFocusColor="WHITE">
+                     <font>
+                        <Font name="System Bold" size="57.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField alignment="CENTER" editable="false" focusTraversable="false" labelFloat="true" layoutX="224.0" layoutY="210.0" prefHeight="54.0" prefWidth="271.0" style="-fx-text-fill: white;" text="User Name" unFocusColor="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField alignment="CENTER" editable="false" focusTraversable="false" labelFloat="true" layoutX="222.0" layoutY="332.0" prefHeight="54.0" prefWidth="271.0" style="-fx-text-fill: white;" text="Password" unFocusColor="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="tf0" alignment="CENTER" layoutX="625.0" layoutY="210.0" prefHeight="54.0" prefWidth="271.0" promptText="User Name" style="-fx-text-fill: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField alignment="CENTER" editable="false" focusTraversable="false" labelFloat="true" layoutX="219.0" layoutY="458.0" prefHeight="54.0" prefWidth="271.0" style="-fx-text-fill: white;" text="Re-type Password" unFocusColor="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="tf1" alignment="CENTER" layoutX="625.0" layoutY="332.0" prefHeight="54.0" prefWidth="271.0" promptText="Password" style="-fx-text-fill: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="tf2" alignment="CENTER" layoutX="625.0" layoutY="458.0" prefHeight="54.0" prefWidth="271.0" promptText="Re-type Password" style="-fx-text-fill: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton buttonType="RAISED" defaultButton="true" layoutX="217.0" layoutY="658.0" onAction="#u_crt" style="-fx-text-fill: white;" text="Create User">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="455.0" layoutY="658.0" onAction="#u_updt" style="-fx-text-fill: white;" text="Update User">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="725.0" layoutY="658.0" onAction="#u_del" style="-fx-text-fill: white;" text="Delete User">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXTextField fx:id="tf3" editable="false" focusTraversable="false" layoutX="235.0" layoutY="753.0" prefHeight="83.0" prefWidth="644.0" style="-fx-text-fill: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField alignment="CENTER" editable="false" focusTraversable="false" labelFloat="true" layoutX="224.0" layoutY="565.0" prefHeight="54.0" prefWidth="271.0" style="-fx-text-fill: white;" text="Officer ID" unFocusColor="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="tf01" alignment="CENTER" layoutX="625.0" layoutY="565.0" prefHeight="54.0" prefWidth="271.0" promptText="Officer ID" style="-fx-text-fill: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="officers" layoutX="318.0" layoutY="55.0" prefHeight="860.0" prefWidth="1148.0" style="-fx-background-color: #9c27b0;">
+               <children>
+                  <VBox layoutX="460.0" layoutY="122.0" spacing="18.0">
+                     <children>
+                        <JFXTextField fx:id="srch1" focusColor="#b9b2b2" prefHeight="69.0" prefWidth="446.0" promptText="Search" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="tc" editable="false" focusTraversable="false" labelFloat="true" prefHeight="69.0" style="-fx-background-color: #9c27b0; -fx-text-fill: white;" unFocusColor="#9c27b0" />
+                        <JFXTextField fx:id="ac" editable="false" focusTraversable="false" labelFloat="true" prefHeight="69.0" style="-fx-background-color: #9c27b0; -fx-text-fill: white;" unFocusColor="#9c27b0" />
+                        <JFXTextField fx:id="cc" editable="false" focusTraversable="false" labelFloat="true" prefHeight="69.0" style="-fx-background-color: #9c27b0; -fx-text-fill: white;" unFocusColor="#9c27b0" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="14.0" layoutY="113.0" spacing="18.0">
+                     <children>
+                        <JFXButton alignment="CENTER" graphicTextGap="12.0" prefHeight="69.0" prefWidth="416.0" style="-fx-background-radius: 2em;" text="OFFICER NAME" textFill="WHITE">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" graphicTextGap="12.0" prefHeight="69.0" prefWidth="416.0" style="-fx-background-radius: 2em;" text="TOTAL CASES" textFill="WHITE">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" graphicTextGap="12.0" prefHeight="69.0" prefWidth="416.0" style="-fx-background-radius: 2em;" text="ACTIVE CASES" textFill="WHITE">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" graphicTextGap="12.0" prefHeight="69.0" prefWidth="416.0" style="-fx-background-radius: 2em;" text="CLOSED CASES" textFill="WHITE">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+                  <PieChart fx:id="ofpie" layoutX="315.0" layoutY="459.0" prefHeight="387.0" prefWidth="518.0" />
+                  <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="12.0" layoutX="906.0" layoutY="122.0" onAction="#ofsrch" prefHeight="71.0" prefWidth="73.0" style="-fx-background-radius: 3em;" text="right" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" glyphStyle="SEARCH" size="30" />
+                     </graphic>
+                  </JFXButton>
+                  <Pane layoutX="1038.0" prefHeight="860.0" prefWidth="110.0" style="-fx-background-color: #7B1FA2;">
+                     <children>
+                        <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="29.0" layoutY="107.0" onAction="#ofprev" prefHeight="46.0" prefWidth="53.0">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="ARROW_UP" glyphStyle="ARROW_UP" size="35" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="29.0" layoutY="664.0" onAction="#ofnxt" prefHeight="46.0" prefWidth="53.0">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="ARROW_DOWN" glyphStyle="ARROW_DOWN" size="35" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="graphs" layoutX="318.0" layoutY="55.0" prefHeight="860.0" prefWidth="1148.0" style="-fx-background-color: #9c27b0;">
+               <children>
+                  <JFXButton fx:id="isrchbtn11" alignment="CENTER" graphicTextGap="12.0" layoutX="691.0" layoutY="47.0" onAction="#load" style="-fx-background-radius: 3em;" text="LOAD" textFill="WHITE">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="FLASH" glyphStyle="FLASH" size="40" />
+                     </graphic>
+                  </JFXButton>
+                  <AnchorPane fx:id="ap" layoutX="102.0" layoutY="161.0" style="-fx-background-color: white;">
+                     <children>
+                        <PieChart fx:id="pie" prefHeight="569.0" prefWidth="945.0" />
+                        <StackedBarChart fx:id="bar" animated="false" legendVisible="false" prefHeight="597.0" prefWidth="941.0">
+                           <xAxis>
+                              <CategoryAxis fx:id="X" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis fx:id="Y" side="LEFT" />
+                           </yAxis>
+                        </StackedBarChart>
+                     </children>
+                  </AnchorPane>
+                  <JFXComboBox fx:id="graph" layoutX="173.0" layoutY="54.0" prefHeight="46.0" promptText="Select Graph" style="-fx-text-fill: white; -fx-prompt-text-fill: white; -fx-border-color: white; -fx-background-color: white;" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="an_content" layoutX="318.0" layoutY="55.0" prefHeight="860.0" prefWidth="524.0" style="-fx-background-color: #9c27b0;">
+               <children>
+                  <Pane prefHeight="58.0" prefWidth="524.0" style="-fx-background-color: #8e24aa;">
+                     <children>
+                        <Label layoutX="155.0" layoutY="9.0" text="Information Cards" textFill="WHITE">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <JFXTextField fx:id="srch" focusColor="#b9b2b2" layoutX="27.0" layoutY="72.0" prefHeight="49.0" prefWidth="372.0" promptText="Search" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </JFXTextField>
+                  <VBox layoutX="38.0" layoutY="150.0" spacing="15.0">
+                     <children>
+                        <Pane fx:id="c1" prefHeight="88.0" prefWidth="407.0" style="-fx-background-color: #8e24aa; -fx-background-radius: 1em;">
+                           <children>
+                              <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="12.0" layoutY="12.0" onAction="#cbtn1" prefHeight="58.0" prefWidth="63.0">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="FILE_TEXT" glyphStyle="FILE_TEXT" size="30" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXTextArea fx:id="card1" layoutX="85.0" layoutY="6.0" prefHeight="78.0" prefWidth="318.0" style="-fx-text-fill: white;" text="2000 : &#10;Reporter Name&#10;25/05/2016" unFocusColor="#9c27b0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXTextArea>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="c2" prefHeight="88.0" prefWidth="407.0" style="-fx-background-color: #8e24aa; -fx-background-radius: 1em;">
+                           <children>
+                              <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="12.0" layoutY="12.0" onAction="#cbtn2" prefHeight="58.0" prefWidth="63.0">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="FILE_TEXT" glyphStyle="FILE_TEXT" size="30" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXTextArea fx:id="card2" layoutX="85.0" layoutY="6.0" prefHeight="78.0" prefWidth="318.0" style="-fx-text-fill: white;" text="2000 : &#10;Reporter Name&#10;25/05/2016" unFocusColor="#9c27b0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXTextArea>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="c3" prefHeight="88.0" prefWidth="407.0" style="-fx-background-color: #8e24aa; -fx-background-radius: 1em;">
+                           <children>
+                              <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="12.0" layoutY="12.0" onAction="#cbtn3" prefHeight="58.0" prefWidth="63.0">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="FILE_TEXT" glyphStyle="FILE_TEXT" size="30" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXTextArea fx:id="card3" layoutX="85.0" layoutY="6.0" prefHeight="78.0" prefWidth="318.0" style="-fx-text-fill: white;" text="2000 : &#10;Reporter Name&#10;25/05/2016" unFocusColor="#9c27b0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXTextArea>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="c4" prefHeight="88.0" prefWidth="407.0" style="-fx-background-color: #8e24aa; -fx-background-radius: 1em;">
+                           <children>
+                              <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="12.0" layoutY="12.0" onAction="#cbtn4" prefHeight="58.0" prefWidth="63.0">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="FILE_TEXT" glyphStyle="FILE_TEXT" size="30" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXTextArea fx:id="card4" layoutX="85.0" layoutY="6.0" prefHeight="78.0" prefWidth="318.0" style="-fx-text-fill: white;" text="2000 : &#10;Reporter Name&#10;25/05/2016" unFocusColor="#9c27b0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXTextArea>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="c5" prefHeight="88.0" prefWidth="407.0" style="-fx-background-color: #8e24aa; -fx-background-radius: 1em;">
+                           <children>
+                              <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="12.0" layoutY="12.0" onAction="#cbtn5" prefHeight="58.0" prefWidth="63.0">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="FILE_TEXT" glyphStyle="FILE_TEXT" size="30" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXTextArea fx:id="card5" layoutX="85.0" layoutY="6.0" prefHeight="78.0" prefWidth="318.0" style="-fx-text-fill: white;" text="2000 : &#10;Reporter Name&#10;25/05/2016" unFocusColor="#9c27b0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXTextArea>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="c6" prefHeight="88.0" prefWidth="407.0" style="-fx-background-color: #8e24aa; -fx-background-radius: 1em;">
+                           <children>
+                              <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="12.0" layoutY="12.0" onAction="#cbtn6" prefHeight="58.0" prefWidth="63.0">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="FILE_TEXT" glyphStyle="FILE_TEXT" size="30" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXTextArea fx:id="card6" layoutX="85.0" layoutY="6.0" prefHeight="78.0" prefWidth="318.0" style="-fx-text-fill: white;" text="2000 : &#10;Reporter Name&#10;25/05/2016" unFocusColor="#9c27b0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXTextArea>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="c7" prefHeight="88.0" prefWidth="407.0" style="-fx-background-color: #8e24aa; -fx-background-radius: 1em;">
+                           <children>
+                              <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="12.0" layoutY="12.0" onAction="#cbtn7" prefHeight="58.0" prefWidth="63.0">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="FILE_TEXT" glyphStyle="FILE_TEXT" size="30" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXTextArea fx:id="card7" layoutX="85.0" layoutY="6.0" prefHeight="78.0" prefWidth="318.0" style="-fx-text-fill: white;" text="2000 : &#10;Reporter Name&#10;25/05/2016" unFocusColor="#9c27b0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXTextArea>
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+                  <JFXButton fx:id="srchbtn" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" defaultButton="true" graphicTextGap="12.0" layoutX="421.0" layoutY="68.0" onAction="#srch" prefHeight="71.0" prefWidth="73.0" style="-fx-background-radius: 3em;" text="right" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" glyphStyle="SEARCH" size="30" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="55.0" prefHeight="860.0" prefWidth="317.0" style="-fx-background-color: #673AB7;">
+               <children>
+                  <Pane layoutY="-3.0" prefHeight="88.0" prefWidth="318.0" style="-fx-background-color: #512DA8;">
+                     <children>
+                        <Label fx:id="offname" layoutX="96.0" layoutY="14.0" text="name" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="26.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="offtyp" layoutX="96.0" layoutY="55.0" text="officer" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <FontAwesomeIconView fill="WHITE" glyphName="USER_SECRET" layoutX="26.0" layoutY="72.0" size="60" />
+                     </children>
+                  </Pane>
+                  <VBox alignment="CENTER" layoutX="24.0" layoutY="134.0" spacing="18.0">
+                     <children>
+                        <JFXButton alignment="CENTER" graphicTextGap="12.0" onAction="#home" prefHeight="58.0" prefWidth="270.0" style="-fx-background-radius: 2em;" text="Home" textFill="WHITE">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="HOME" glyphStyle="HOME" size="25" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="offhm" alignment="CENTER" graphicTextGap="12.0" onAction="#ofhome" prefHeight="58.0" prefWidth="270.0" style="-fx-background-radius: 2em;" text="Case Stats" textFill="WHITE">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="HOME" glyphStyle="HOME" size="25" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" graphicTextGap="12.0" onAction="#inf" prefHeight="58.0" prefWidth="270.0" style="-fx-background-radius: 2em;" text="Information Reports" textFill="WHITE">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="INFO_CIRCLE" glyphStyle="INFO_CIRCLE" size="25" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" graphicTextGap="12.0" onAction="#stat" prefHeight="58.0" prefWidth="270.0" style="-fx-background-radius: 2em;" text="Statistics" textFill="WHITE">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="TACHOMETER" glyphStyle="TACHOMETER" size="25" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="traf" alignment="CENTER" graphicTextGap="12.0" onAction="#traffic" prefHeight="58.0" prefWidth="270.0" style="-fx-background-radius: 2em;" text="Traffic Control" textFill="WHITE">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="TRAFFIC_LIGHT" glyphStyle="TRAFFIC_LIGHT" size="25" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="veh" alignment="CENTER" graphicTextGap="12.0" onAction="#vehicle" prefHeight="58.0" prefWidth="270.0" style="-fx-background-radius: 2em;" text="Vehicle Search" textFill="WHITE">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="CAR" glyphStyle="CAR" size="25" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" graphicTextGap="12.0" onAction="#tables" prefHeight="58.0" prefWidth="270.0" style="-fx-background-radius: 2em;" text="Raw Data" textFill="WHITE">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="DATABASE" glyphStyle="DATABASE" size="25" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="users" alignment="CENTER" graphicTextGap="12.0" onAction="#userman" prefHeight="58.0" prefWidth="270.0" style="-fx-background-radius: 2em;" text="Users Manager" textFill="WHITE">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="USERS" glyphStyle="USERS" size="25" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+                  <JFXTextField fx:id="Session" editable="false" focusColor="WHITE" focusTraversable="false" labelFloat="true" layoutX="74.0" layoutY="754.0" prefHeight="46.0" prefWidth="170.0" style="-fx-text-fill: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </AnchorPane>
+            <Pane prefHeight="58.0" prefWidth="1466.0" style="-fx-background-color: #4a148c;">
+               <children>
+                  <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="1408.0" layoutY="7.0" onAction="#logout" style="-fx-background-radius: 3em;" text="Button">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="CLOSE" glyphStyle="CLOSE" size="35" />
+                     </graphic>
+                  </JFXButton>
+                  <Label alignment="CENTER" layoutX="159.0" layoutY="10.0" prefHeight="39.0" prefWidth="1148.0" text="POLICE DEPARTMENT DATABASE MANAGEMENT AND ANALYSIS SYSTEM" textFill="WHITE">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <AnchorPane fx:id="right" layoutX="842.0" layoutY="55.0" prefHeight="860.0" prefWidth="624.0" style="-fx-background-color: #fff;">
+               <children>
+                  <Pane fx:id="rpt" prefHeight="58.0" prefWidth="624.0" style="-fx-background-color: #6a1b9a;">
+                     <children>
+                        <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="12.0" layoutX="521.0" layoutY="7.0" onAction="#nxt" style="-fx-background-radius: 3em;" text="right" textFill="WHITE">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="ARROW_RIGHT_BOLD" glyphStyle="ARROW_RIGHT_BOLD" size="33" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="12.0" layoutX="65.0" layoutY="7.0" onAction="#prev" style="-fx-background-radius: 3em;" text="right" textFill="WHITE">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="ARROW_LEFT_BOLD" glyphStyle="ARROW_LEFT_BOLD" size="33" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="opn" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="12.0" layoutX="283.0" layoutY="7.0" onAction="#open" text="right" textFill="WHITE">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="OPEN_IN_NEW" glyphStyle="OPEN_IN_NEW" size="35" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+                  <JFXTextField fx:id="t0" alignment="CENTER" editable="false" focusTraversable="false" labelFloat="true" layoutX="215.0" layoutY="73.0" prefHeight="49.0" prefWidth="196.0" text="ID">
+                     <effect>
+                        <Blend />
+                     </effect>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <Pane layoutX="29.0" layoutY="150.0" prefHeight="691.0" prefWidth="571.0" style="-fx-background-radius: 5em; -fx-background-color: #fff;">
+                     <children>
+                        <VBox fx:id="v" alignment="CENTER" layoutX="47.0" layoutY="31.0" prefHeight="629.0" prefWidth="477.0" spacing="20.0">
+                           <children>
+                              <HBox fx:id="b1" spacing="25.0">
+                                 <children>
+                                    <Label fx:id="l1" prefWidth="90.0" text="Label">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="t1" editable="false" focusTraversable="false" labelFloat="true" prefHeight="31.0" prefWidth="360.0">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </JFXTextField>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="b2" spacing="25.0">
+                                 <children>
+                                    <Label fx:id="l2" prefWidth="90.0" text="Description :">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="t2" editable="false" focusTraversable="false" labelFloat="true" prefWidth="360.0">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </JFXTextField>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="b3" spacing="25.0">
+                                 <children>
+                                    <Label fx:id="l3" prefWidth="90.0" text="Label">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="t3" editable="false" focusTraversable="false" labelFloat="true" prefWidth="360.0">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </JFXTextField>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="b4" spacing="25.0">
+                                 <children>
+                                    <Label fx:id="l4" prefWidth="90.0" text="Label">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="t4" editable="false" focusTraversable="false" labelFloat="true" prefWidth="360.0">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </JFXTextField>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="b5" spacing="25.0">
+                                 <children>
+                                    <Label fx:id="l5" prefWidth="90.0" text="Label">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="t5" editable="false" focusTraversable="false" labelFloat="true" prefWidth="360.0">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </JFXTextField>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="b6" spacing="25.0">
+                                 <children>
+                                    <Label fx:id="l6" prefWidth="90.0" text="Label">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="t6" editable="false" focusTraversable="false" labelFloat="true" prefWidth="360.0">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </JFXTextField>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="b7" spacing="25.0">
+                                 <children>
+                                    <Label fx:id="l7" prefWidth="90.0" text="Label">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="t7" editable="false" focusTraversable="false" labelFloat="true" prefWidth="360.0">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </JFXTextField>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="b8" spacing="25.0">
+                                 <children>
+                                    <Label fx:id="l8" prefWidth="90.0" text="Label">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="t8" editable="false" focusTraversable="false" labelFloat="true" prefWidth="360.0">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </JFXTextField>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="b9" spacing="25.0">
+                                 <children>
+                                    <Label fx:id="l9" prefWidth="90.0" text="Label">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="t9" editable="false" focusTraversable="false" labelFloat="true" prefWidth="360.0">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </JFXTextField>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <JFXButton fx:id="paynow" alignment="CENTER" graphicTextGap="12.0" layoutX="151.0" layoutY="631.0" onAction="#paynow" prefHeight="58.0" prefWidth="270.0" style="-fx-background-radius: 2em;" text="Pay Now">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="PAYPAL" glyphStyle="PAYPAL" size="25" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="sear" focusTraversable="true" layoutX="318.0" layoutY="55.0" prefHeight="860.0" prefWidth="524.0" style="-fx-background-color: #9c27b0;">
+               <children>
+                  <Pane prefHeight="58.0" prefWidth="524.0" style="-fx-background-color: #8e24aa;">
+                     <children>
+                        <Label fx:id="srchtitle" layoutX="24.0" layoutY="10.0" text="Information Reports and Officers Search" textFill="WHITE">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <JFXTextField fx:id="name" focusColor="#b9b2b2" layoutX="27.0" layoutY="72.0" prefHeight="42.0" prefWidth="352.0" promptText="Search by Name" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton fx:id="isrchbtn" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="12.0" layoutX="396.0" layoutY="58.0" onAction="#fetch" prefHeight="71.0" prefWidth="73.0" style="-fx-background-radius: 3em;" text="right" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" glyphStyle="SEARCH" size="30" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXComboBox fx:id="offense" focusColor="WHITE" labelFloat="true" layoutX="252.0" layoutY="381.0" prefHeight="49.0" prefWidth="257.0" promptText="Offense Type" style="-fx-text-fill: black; -fx-prompt-text-fill: black; -fx-background-color: white;" unFocusColor="WHITE">
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </JFXComboBox>
+                  <JFXTextField fx:id="tupls" layoutX="64.0" layoutY="193.0" prefHeight="15.0" prefWidth="232.0" promptText="Number Of Records" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="ofcode" layoutX="73.0" layoutY="386.0" prefHeight="39.0" prefWidth="156.0" promptText="Offense Code" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXComboBox fx:id="dist" focusColor="WHITE" labelFloat="true" layoutX="76.0" layoutY="455.0" prefHeight="49.0" prefWidth="257.0" promptText="District" style="-fx-text-fill: black; -fx-prompt-text-fill: black; -fx-background-color: white;" unFocusColor="WHITE">
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </JFXComboBox>
+                  <Label layoutX="65.0" layoutY="255.0" text="Date Reported Range" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXCheckBox fx:id="ch2" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="25.0" layoutY="204.0">
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </JFXCheckBox>
+                  <JFXCheckBox fx:id="ch3" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="25.0" layoutY="396.0">
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </JFXCheckBox>
+                  <JFXCheckBox fx:id="ch4" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="26.0" layoutY="471.0">
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </JFXCheckBox>
+                  <JFXCheckBox fx:id="ch5" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="25.0" layoutY="260.0">
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </JFXCheckBox>
+                  <JFXDatePicker fx:id="st" defaultColor="#8e24aa" layoutX="52.0" layoutY="325.0" />
+                  <JFXDatePicker fx:id="en" defaultColor="#8e24aa" layoutX="284.0" layoutY="325.0" />
+                  <Label layoutX="307.0" layoutY="292.0" text="End Date" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="81.0" layoutY="292.0" text="Start Date" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXComboBox fx:id="casest" focusColor="WHITE" labelFloat="true" layoutX="75.0" layoutY="537.0" prefHeight="49.0" prefWidth="257.0" promptText="Case Status" style="-fx-text-fill: black; -fx-prompt-text-fill: black; -fx-background-color: white;" unFocusColor="WHITE">
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </JFXComboBox>
+                  <JFXCheckBox fx:id="ch6" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="25.0" layoutY="553.0" text=" " textFill="WHITE">
+                     <effect>
+                        <Blend />
+                     </effect>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXCheckBox>
+                  <JFXComboBox fx:id="vicst" focusColor="WHITE" labelFloat="true" layoutX="75.0" layoutY="619.0" prefHeight="49.0" prefWidth="257.0" promptText="Victim Status" style="-fx-text-fill: black; -fx-prompt-text-fill: black; -fx-background-color: white;" unFocusColor="WHITE">
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </JFXComboBox>
+                  <JFXCheckBox fx:id="ch7" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="25.0" layoutY="635.0">
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </JFXCheckBox>
+                  <JFXTextField fx:id="ofname" focusColor="#b9b2b2" layoutX="64.0" layoutY="129.0" prefHeight="42.0" prefWidth="352.0" promptText="Search by Officer Name" style="-fx-text-fill: white; -fx-prompt-text-fill: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXCheckBox fx:id="ch1" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="25.0" layoutY="141.0">
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </JFXCheckBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

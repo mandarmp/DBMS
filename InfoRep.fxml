@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="723.0" prefWidth="1016.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PDBMS.InfoRep">
+   <children>
+      <Pane prefHeight="723.0" prefWidth="110.0" style="-fx-background-color: #7B1FA2;">
+         <children>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="29.0" layoutY="107.0" onAction="#previous" prefHeight="46.0" prefWidth="53.0">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="ARROW_UP" glyphStyle="ARROW_UP" size="35" />
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="29.0" layoutY="547.0" onAction="#next" prefHeight="46.0" prefWidth="53.0">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="ARROW_DOWN" glyphStyle="ARROW_DOWN" size="35" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Label layoutX="429.0" layoutY="31.0" style="-fx-background-color: 0,100,0;" text="Information Report" textFill="#7b1fa2">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="144.0" layoutY="95.0">
+         <children>
+            <AnchorPane layoutX="2.0">
+               <children>
+                  <JFXTextField fx:id="tf2" layoutX="332.0" onMouseClicked="#disable" promptText="Last Name" />
+                  <JFXTextField fx:id="tf4" layoutX="697.0" onMouseClicked="#disable" promptText="Gender" />
+                  <JFXTextField fx:id="tf1" layoutX="161.0" onMouseClicked="#disable" promptText="First Name" />
+                  <JFXTextField fx:id="tf3" layoutX="514.0" onMouseClicked="#disable" promptText="Age" />
+                  <Label layoutY="3.0" prefHeight="19.0" prefWidth="122.0" style="-fx-background-color: 0,100,0;" text="Offender Details :" textFill="#7b1fa2">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="4.0" layoutY="42.0">
+               <children>
+                  <JFXTextField fx:id="tf6" layoutX="332.0" onMouseClicked="#disable" promptText="Last Name" />
+                  <JFXTextField fx:id="tf8" layoutX="697.0" onMouseClicked="#disable" promptText="Gender" />
+                  <JFXTextField fx:id="tf5" layoutX="161.0" onMouseClicked="#disable" promptText="First Name" />
+                  <JFXTextField fx:id="tf7" layoutX="514.0" onMouseClicked="#disable" promptText="Age" />
+                  <Label layoutY="3.0" prefHeight="19.0" prefWidth="122.0" style="-fx-background-color: 0,100,0;" text="    Victim Details :" textFill="#7b1fa2">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="4.0" layoutY="83.0">
+               <children>
+                  <JFXTextField fx:id="tf10" layoutX="332.0" onMouseClicked="#disable" promptText="Last Name" />
+                  <JFXTextField fx:id="tf12" layoutX="697.0" onMouseClicked="#disable" promptText="Gender" />
+                  <JFXTextField fx:id="tf9" layoutX="161.0" onMouseClicked="#disable" promptText="First Name" />
+                  <JFXTextField fx:id="tf11" layoutX="514.0" onMouseClicked="#disable" promptText="Age" />
+                  <Label layoutY="3.0" prefHeight="19.0" prefWidth="122.0" style="-fx-background-color: 0,100,0;" text="Reporter Details :" textFill="#7b1fa2">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="1.0" layoutY="125.0" prefHeight="27.0" prefWidth="839.0">
+               <children>
+                  <JFXTextField fx:id="tf13" layoutX="163.0" onMouseClicked="#disable" prefHeight="19.0" prefWidth="676.0" />
+                  <Label layoutY="3.0" prefHeight="19.0" prefWidth="122.0" style="-fx-background-color: 0,100,0;" text="         Description :" textFill="#7b1fa2">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="4.0" layoutY="159.0" prefHeight="27.0" prefWidth="839.0">
+               <children>
+                  <JFXTextField fx:id="tf14" layoutX="163.0" onMouseClicked="#disable" prefHeight="25.0" prefWidth="676.0" />
+                  <Label layoutY="3.0" prefHeight="19.0" prefWidth="122.0" style="-fx-background-color: 0,100,0;" text="             Location :" textFill="#7b1fa2">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="144.0" layoutY="304.0">
+         <children>
+            <Label layoutX="14.0" layoutY="5.0" prefHeight="19.0" prefWidth="122.0" style="-fx-background-color: 0,100,0;" text="Offence Code :" textFill="#7b1fa2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="offense" focusColor="#48a5ea" layoutY="37.0" prefHeight="25.0" prefWidth="242.0" promptText="Offence Type" />
+            <JFXTextField fx:id="tf0" alignment="CENTER" layoutY="108.0" onMouseClicked="#enabl" promptText="Report Number">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="tf15" layoutX="121.0" layoutY="2.0" prefHeight="25.0" prefWidth="82.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="441.0" layoutY="304.0" prefHeight="186.0" prefWidth="135.0">
+         <children>
+            <VBox layoutY="31.0" prefHeight="53.0" prefWidth="135.0" spacing="15.0">
+               <children>
+                  <JFXRadioButton fx:id="Ar_T" text="TRUE">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="arrest" />
+                     </toggleGroup>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="Ar_F" text="FALSE" toggleGroup="$arrest" />
+               </children>
+            </VBox>
+            <VBox layoutY="133.0" prefHeight="53.0" prefWidth="135.0" spacing="15.0">
+               <children>
+                  <JFXRadioButton fx:id="F" onMouseClicked="#disable" text="FATAL">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="arrest1" />
+                     </toggleGroup>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="NF" onMouseClicked="#disable" text="NON-FATAL" toggleGroup="$arrest1" />
+               </children>
+            </VBox>
+            <Label alignment="CENTER" layoutY="5.0" prefHeight="19.0" prefWidth="135.0" style="-fx-background-color: 0,100,0;" text="Arrest" textFill="#7b1fa2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutY="99.0" prefHeight="19.0" prefWidth="135.0" style="-fx-background-color: 0,100,0;" text="Victim Fatal Status" textFill="#7b1fa2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="144.0" layoutY="517.0">
+         <children>
+            <JFXButton fx:id="ret" buttonType="RAISED" defaultButton="true" onAction="#retrieve" prefHeight="25.0" prefWidth="116.0" ripplerFill="#7b1fa2" style="-fx-border-color: #7b1fa2;" text="Retrieve" textFill="#7b1fa2">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="ins" layoutX="153.0" onAction="#insert" prefHeight="25.0" prefWidth="116.0" ripplerFill="#7b1fa2" style="-fx-border-color: #7b1fa2;" text="Insert" textFill="#7b1fa2">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></JFXButton>
+            <JFXButton layoutX="306.0" onAction="#clear" prefHeight="25.0" prefWidth="116.0" ripplerFill="#7b1fa2" style="-fx-border-color: #7b1fa2;" text="Clear" textFill="#7b1fa2">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="638.0" layoutY="304.0">
+         <children>
+            <Label layoutY="130.0" prefHeight="19.0" prefWidth="122.0" style="-fx-background-color: 0,100,0;" text="Position of Crime" textFill="#7b1fa2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutY="63.0" prefHeight="19.0" prefWidth="122.0" style="-fx-background-color: 0,100,0;" text="Date Occured :" textFill="#7b1fa2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutY="1.0" prefHeight="19.0" prefWidth="122.0" style="-fx-background-color: 0,100,0;" text="Date Reported :" textFill="#7b1fa2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <JFXDatePicker fx:id="rep" defaultColor="#7b1fa2" layoutX="162.0" onMouseClicked="#disable" />
+            <JFXDatePicker fx:id="occ" defaultColor="#7b1fa2" layoutX="162.0" layoutY="60.0" onMouseClicked="#disable" />
+            <JFXTextField fx:id="tf16" layoutX="148.0" layoutY="127.0" onMouseClicked="#disable" prefHeight="25.0" prefWidth="171.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="638.0" layoutY="542.0">
+         <children>
+            <JFXTextField fx:id="tf17" layoutX="167.0" onMouseClicked="#disable" />
+            <JFXTextField fx:id="tf18" layoutX="167.0" layoutY="44.0" onMouseClicked="#disable" />
+            <Label layoutY="3.0" prefHeight="19.0" prefWidth="122.0" style="-fx-background-color: 0,100,0;" text="Report Type :" textFill="#7b1fa2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutY="47.0" prefHeight="19.0" prefWidth="122.0" style="-fx-background-color: 0,100,0;" text="Officer ID :" textFill="#7b1fa2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXTextArea fx:id="status" editable="false" focusTraversable="false" labelFloat="true" layoutX="145.0" layoutY="656.0" prefHeight="39.0" prefWidth="422.0" />
+      <Label layoutX="329.0" layoutY="605.0" style="-fx-background-color: 0,100,0;" text="Status" textFill="#7b1fa2">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton cancelButton="true" contentDisplay="GRAPHIC_ONLY" layoutX="918.0" layoutY="27.0" onAction="#back" text="Button">
+         <graphic>
+            <FontAwesomeIconView fill="#7b1fa2" glyphName="CLOSE" glyphStyle="CLOSE" size="35" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>
